@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container p-4">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="btn btn-success green d-flex flex-row align-items-center"
+          id="add"
+        >
+          <span
+            class="iconify me-2"
+            data-icon="akar-icons:circle-plus-fill"
+            style="color: white"
+            data-width="24"
+            data-height="24"
+          ></span
+          >Add Row
+        </button>
+
+        <table class="table table-bordered mt-3">
+          <thead class="table text-white bg-success green">
+            <tr>
+              <th scope="col">Actions</th>
+              <th scope="col">Number</th>
+              <th scope="col">Type</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                <button id="delete-Row" type="button" class="btn btn-danger">
+                  <span
+                    class="iconify me-2"
+                    data-icon="fa-solid:trash"
+                    style="color: white"
+                    data-width="24"
+                    data-height="24"
+                  ></span
+                  >Delete
+                </button>
+                <button id="clone-Row" type="button" class="btn btn-primary">
+                  <span
+                  class="iconify me-2"
+                  data-icon="fa-solid:clone"
+                  style="color: white"
+                  data-width="24"
+                  data-height="24"
+                ></span
+                >Clone</button>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputNumber"
+                />
+              </td>
+              <td>
+                <input type="text" class="form-control" id="exampleInputText" />
+              </td>
+              <td class="d-flex flex-row align-items-center">
+                <div class="form-check me-2">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio1"
+                    name="optradio"
+                    value="option1"
+                    checked
+                  />New
+                  <label class="form-check-label" for="radio1"></label>
+                </div>
+                <div class="form-check me-2">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="option2"
+                  />In progess
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check me-2">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio3"
+                    name="optradio"
+                    value="option3"
+                  />Confirmed
+                  <label class="form-check-label"></label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="container-fluid mt-2">
+          <div class="rowsNumber">
+            All rows number : <span id="rowscount"></span>
+          </div>
+          <div class="unconfirmed mt-2">
+            Not Confirmed rows number : <span id="unconfirmedcount"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/JS/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
