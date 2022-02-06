@@ -1,11 +1,15 @@
 function rowCounter() {
   let count = document.querySelectorAll("tr").length - 1;
+  let count1 = $(document).find("tr").length-1;
+  // console.log(count1);
   $(document).ready(function () {
     $("#rowscount").text(count);
   });
 }
 function unConfirmed() {
-  let count = document.querySelectorAll(".unconfirmed").length - 1;
+  let count = document.querySelectorAll(".unconfirmed").length;
+  let count1 = $(document).find(".unconfirmed").length;
+  // console.log(count1);
   $(document).ready(function () {
     $("#unconfirmedcount").text(count);
   });
